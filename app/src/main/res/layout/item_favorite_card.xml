@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="0dp"
+    android:layout_height="130dp"
+    android:layout_margin="4dp"
+    android:layout_weight="1">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgPlace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/RoundedImage24" />
+
+    <View
+        style="@style/CardShade"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom" />
+
+    <ImageView
+        android:id="@+id/btnHeart"
+        style="@style/CardHeartFilled"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="6dp"
+        android:importantForAccessibility="no"
+        app:tint="#4FD1D9" />
+
+    <TextView
+        android:id="@+id/tvPlaceName"
+        style="@style/CardTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="8dp" />
+</FrameLayout>
